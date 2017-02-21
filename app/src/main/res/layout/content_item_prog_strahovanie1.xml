@@ -1,0 +1,135 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kz.dreamwings.nsk.navdraw.MainActivity"
+    tools:showIn="@layout/activity_item_prog_strahovanie1"
+    android:layout_marginTop="?attr/actionBarSize"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
+    <RelativeLayout
+        android:id="@+id/img_slideshow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:id="@+id/img_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:ellipsize="end"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF"
+            android:maxLines="4"
+            android:text="Программа добровольного страхования «Профи+». Выплата при ДТП до 150 000 тенге по цене 100 тенге!"
+            android:layout_alignBottom="@+id/viewpager"
+            android:minHeight="40dp"
+            android:textSize="16dp"
+            />
+
+
+        <kz.dreamwings.nsk.navdraw.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:padding="3dip"
+            android:background="#99000000"
+            android:layout_above="@+id/img_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:background="#F0F4C3"
+            android:layout_marginBottom="75dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Стоимость страховки"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#263238"
+                android:layout_marginLeft="10dp"
+                android:text="Средняя стоимость :"/>
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="6dp"
+                android:text="50 000 тг"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="6dp"
+                android:text="в год"/>
+
+        </LinearLayout>
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp">
+            <Button
+                android:id="@+id/calk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Калькулятор стоимости страхования"
+                android:background="#00BCD4"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

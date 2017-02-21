@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chrisrisner.fragmentsample.FragmentTwo"
+    android:background="#FFFFFF">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Кто такой страховой агент?"
+              android:textColor="@android:color/holo_red_dark"
+              android:textSize="18sp"/>
+            <TextView
+
+             android:id="@+id/about_company"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="5dp"
+                android:textSize="15sp"
+             android:text="Страховой агент – это официальный представитель страховой компании, осуществляющий операции по заключению договоров имущественного и личного страхования с физическими и юридическими лицами, со свободным графиком работы и неограниченным заработком. Работа страхового агента подходит для энергичных, общительных людей, нацеленных на результат. Страховой агент помогает людям и организациям выбирать наиболее полную страховую защиту." />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:text="Если Вы решили стать страховым агентом, пожалуйста, свяжитесь с нами по ниже указанным данным"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="10dp"
+                android:text="Возникли вопросы?"
+                android:textSize="17sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_nomer_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_call"
+                    android:tint="#FF4081"/>
+                <TextView
+                    android:id="@+id/nomer1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+ 7 (727) 258-18-00"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mail_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_dialog_email"
+                    android:tint="#FF4081"/>
+                <TextView
+                    android:id="@+id/mail_agent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maxumova.Z@nsk.kz"
+
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:text="Жания"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout></ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_program"
+            android:title="Программы страхования" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_kom"
+            android:title="О компании" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_quality"
+            android:title="Служба качества" />
+        <item
+            android:id="@+id/press_sentr"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Пресс центр"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_agent"
+            android:title="Агентам" />
+        />
+    </group>
+
+    <item android:title="Связь"
+        android:menuCategory="container">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_call"
+                android:title="Контакты" />
+        </menu>
+    </item>
+
+</menu>
